@@ -8,6 +8,6 @@ jobs:
       name: template
       runs-on: "self-hosted"
       steps: 
-      - name: Pull
+      - name: step1
         run: |
-          ls > b.txt
+          ls > c.txt
