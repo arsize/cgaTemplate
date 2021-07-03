@@ -10,4 +10,4 @@ jobs:
       steps: 
       - name: Pull
         run: |
-          ls > a.txt
+          ls > b.txt
