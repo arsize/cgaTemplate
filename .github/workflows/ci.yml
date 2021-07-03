@@ -1,0 +1,9 @@
+name: GitHub Actions Build
+on:
+  push:
+    branches:
+      - main
+jobs:
+    job1:
+      name: template
+      runs-on: "self-hosted"
