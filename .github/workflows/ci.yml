@@ -4,10 +4,12 @@ on:
     branches:
       - main
 jobs:
-    job1:
+    my_first_job:
       name: template
       runs-on: "self-hosted"
       steps: 
-      - name: step1
+      - name: Check out repository
+        uses: actions/checkout@v2
         run: |
+          ls ${{ github.workspace }}
           ls > c.txt
