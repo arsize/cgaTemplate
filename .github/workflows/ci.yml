@@ -7,3 +7,5 @@ jobs:
     job1:
       name: template
       runs-on: "self-hosted"
+      steps: 
+      - name: Pull
