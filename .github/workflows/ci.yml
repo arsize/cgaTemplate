@@ -9,6 +9,7 @@ jobs:
       runs-on: "self-hosted"
       steps: 
       - name: Check out repository
+        working-directory: /usr/template/package
         run: |
-          pwd > c.txt
-          working-directory:/usr/template/package
+          ls > c.txt
+          
