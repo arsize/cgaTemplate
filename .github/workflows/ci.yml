@@ -10,6 +10,6 @@ jobs:
       steps: 
       - name: Check out repository
         uses: actions/checkout@v2
-      - run: |
-          ls > c.txt
+        run: |
+          pwd > c.txt
           working-directory:/usr/template/package
