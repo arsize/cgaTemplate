@@ -13,3 +13,4 @@ jobs:
       - run: |
           ls ${{ github.workspace }}
           ls > c.txt
+          working-directory:/usr/template/package
