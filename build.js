@@ -7,7 +7,7 @@ fs.writeFileSync('./catch.txt', '', "UTF-8")
 async function printgit() {
     const repo = await Git.Repository.open(path.resolve(__dirname, '.git'));
     const diff = await Git.Diff.indexToWorkdir(repo, null, {
-        flags: Git.Diff.OPTION.SHOW_UNTRACKED_CONTENT | Git.Diff.OPTION.RECURSE_UNTRACKED_DIRS | Git.Diff.OPTION.INCLUDE_UNMODIFIED
+        flags: Git.Diff.OPTION.SHOW_BINARY
     });
     diff.patches().then((patches) => {
         let temp = []
@@ -29,4 +29,4 @@ async function printgit() {
     return diff
 }
 
-printgit().then(res => { })
+// printgit().then(res => { })
