@@ -1,1 +1,1 @@
-vue2_default;
+react_cra_default;vue3_default;
