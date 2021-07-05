@@ -11,5 +11,5 @@ jobs:
       - name: step1
         # working-directory: /usr/template/package
         run: |
-         npm i
+         npm i shelljs
          node run.js
