@@ -4,12 +4,12 @@ on:
     branches:
       - main
 jobs:
-    my_first_job:
-      name: template
-      runs-on: "self-hosted"
-      steps: 
+  my_first_job:
+    name: template
+    runs-on: "self-hosted"
+    steps:
       - name: Check out repository
         working-directory: /usr/template/package
+        uses: actions/checkout@v1
         run: |
           ls > c.txt
-          
