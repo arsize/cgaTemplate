@@ -6,4 +6,3 @@ text.map(res => {
     shell.exec(`zip -qr ${res}.zip ./${res}`)
     shell.exec(`mv ./${res}.zip /usr/template/package/zip/${res}.zip`)
 })
-shell.exec("rm ./catch.txt")

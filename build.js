@@ -13,12 +13,14 @@ async function printgit() {
         let temp = []
         patches.forEach((patch) => {
             let pth = patch.newFile().path()
+            console.log(pth)
             if (pth.indexOf("/") != -1 && pth.indexOf(".github/") == -1 && pth.indexOf(".husky/") == -1) {
                 if (!temp.includes(pth.split("/")[0])) {
                     temp.push(pth.split("/")[0])
                 }
             }
         });
+        return
         temp.map(res => {
             fs.appendFileSync("./catch.txt", res + ";", "UTF-8", { 'flags': 'a+' })
         })
