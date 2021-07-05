@@ -8,7 +8,7 @@ jobs:
     runs-on: "self-hosted"
     steps:
       - uses: actions/checkout@v2
-      - name: CLI
-        working-directory: /usr/template/package
+      - name: step1
+        # working-directory: /usr/template/package
         run: |
-          ls > c.txt
+          npm --version
