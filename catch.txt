@@ -1,1 +1,1 @@
-vue2_default;vue3;vue4
+vue2_default;
