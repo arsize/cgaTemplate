@@ -5,9 +5,10 @@ on:
       - main
 jobs:
   my_first_job:
+    name: template
     runs-on: "self-hosted"
     steps:
+      working-directory: /usr/template/package
       - uses: actions/checkout@v2
       - run: |
-          ls > c.txt
-        working-directory: /usr/template/package
+        ls > c.txt
