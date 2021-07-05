@@ -12,10 +12,8 @@ async function printgit() {
     diff.patches().then((patches) => {
         let temp = []
         patches.forEach((patch) => {
-          
             let pth = patch.newFile().path()
-            console.log(pth)
-            if (pth.indexOf("/") != -1 && pth.indexOf(".github/") == -1) {
+            if (pth.indexOf("/") != -1 && pth.indexOf(".github/") == -1 && pth.indexOf(".husky/") == -1) {
                 if (!temp.includes(pth.split("/")[0])) {
                     temp.push(pth.split("/")[0])
                 }

@@ -1,1 +1,1 @@
-vue2_default;
+.husky;vue2_default;
