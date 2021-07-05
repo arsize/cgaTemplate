@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/arsize/cgaTemplate/issues"
   },
-  "homepage": "https://github.com/arsize/cgaTemplate#readme"
+  "homepage": "https://github.com/arsize/cgaTemplate#readme",
+  "devDependencies": {
+    "jszip": "^3.6.0"
+  }
 }

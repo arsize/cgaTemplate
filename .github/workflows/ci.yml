@@ -11,4 +11,4 @@ jobs:
       - name: step1
         # working-directory: /usr/template/package
         run: |
-          npm --version
+          zip -qr vue2_default.zip ./vue2_default
