@@ -19,5 +19,8 @@
   "homepage": "https://github.com/arsize/cgaTemplate#readme",
   "devDependencies": {
     "jszip": "^3.6.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.4"
   }
 }
