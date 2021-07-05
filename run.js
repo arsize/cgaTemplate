@@ -7,7 +7,6 @@ const shell = require("shelljs")
 var text = fs.readFileSync("./catch.txt", "utf-8")
 text = text.split(";")
 text.map(res => {
-    if (shell.exec(`zip -qr ${res}.zip ./${res}`).code !== 0) {
-        shell.exec(`mv /usr/template/package/zip/${res}.zip ./${res}.zip`)
-    }
+    shell.exec(`zip -qr ${res}.zip ./${res}`)
+    shell.exec(`mv /usr/template/package/zip/${res}.zip ./${res}.zip`)
 })
