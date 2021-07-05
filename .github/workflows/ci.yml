@@ -8,6 +8,7 @@ jobs:
     runs-on: "self-hosted"
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          ls > c.txt
+      - name: CLI
         working-directory: /usr/template/package
+        run: |
+          ls > c.txt
